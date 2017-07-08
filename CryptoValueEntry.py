@@ -7,6 +7,6 @@ class CryptoValueEntry:
         self.ethValue=ETHValue
         self.dateEntry=datetime.now()
 
-    def csvRepresentation(self):
+    def csvRep(self):
         csv=str(self.dateEntry)+","+str(self.btcValue)+","+str(self.ethValue)+",\n"
         return csv
