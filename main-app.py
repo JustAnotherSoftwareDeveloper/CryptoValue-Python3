@@ -1,6 +1,8 @@
 from CryptoValueEntry import CryptoValueEntry
+from CryptoValueRequest import  CryptoValueRequest
 if __name__ == '__main__':
-    newEntry=CryptoValueEntry(500.0,5.0)
-    print(newEntry.csvRepresentation())
+    request=CryptoValueRequest()
+    entry=request.create_entry();
+    print(entry.csvRepresentation())
 else:
     print("import lib")
